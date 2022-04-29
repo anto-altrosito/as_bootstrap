@@ -15,37 +15,6 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-6">
-                <h1>Fluid bootstrap h1</h1>
-                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
-                    sites,
-                    with jsDelivr and a template starter page.
-                </p>
-                <hr />
-                <h2>Fluid bootstrap h2</h2>
-                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
-                    sites,
-                    with jsDelivr and a template starter page.
-                </p>
-                <hr />
-                <h3>Fluid bootstrap h3</h3>
-                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
-                    sites,
-                    with jsDelivr and a template starter page.
-                </p>
-                <hr />
-                <h4>Fluid bootstrap h4</h4>
-                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
-                    sites,
-                    with jsDelivr and a template starter page.
-                </p>
-                <hr />
-                <h5>Fluid bootstrap h5</h5>
-                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
-                    sites,
-                    with jsDelivr and a template starter page.
-                </p>
-            </div>
-            <div class="col-lg-6">
                 <p class="display-1">Display 1</p>
                 <p class="display-2">Display 2</p>
                 <p class="display-3">Display 3</p>
@@ -53,38 +22,157 @@
                 <p class="display-5">Display 5</p>
                 <p class="display-6">Display 6</p>
 
+                <h1>Fluid bootstrap h1</h1>
+                <h2>Fluid bootstrap h2</h2>
+                <h3>Fluid bootstrap h3</h3>
+                <h4>Fluid bootstrap h4</h4>
+                <h5>Fluid bootstrap h5</h5>
+                <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+                    sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+                    world’s most popular framework for building responsive, mobile-first
+                    sites, with jsDelivr and a template starter page.
+                </p>
+                <p class="lead">
+                    This is a lead paragraph. It stands out from regular paragraphs.
+                </p>
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined.</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+            <div class="col-lg-6">
+                <h1>Form</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email label</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password label</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="form-check form-switch mt-4">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox
+                            input</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                            checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox
+                            input</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mt-5">Invia</button>
+                </form>
+
+
+                <h3 class="mt-4">Buttons</h3>
+
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+
+                <h3 class="mt-4">Buttons outline</h3>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+
+                <h3 class="mt-4">Blockquote</h3>
+                <blockquote class="blockquote">
+                    A well-known quote, contained in a blockquote element.
+                </blockquote>
+
+                <h3 class="mt-4">Modal</h3>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Get started with Bootstrap, the world’s most popular framework for building
+                                    responsive, mobile-first
+                                    sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with
+                                    Bootstrap, the
+                                    world’s most popular framework for building responsive, mobile-first
+                                    sites, with jsDelivr and a template starter page.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
+    </div>
 
+    <div class="container-small">
+        <h1>Container small</h1>
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
+        <h2>Title h2</h2>
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
 
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
 
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
+        <h2>Title h3</h2>
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
 
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Invia</button>
-        </form>
-
-        <hr />
-
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-
-
+        <p>Get started with Bootstrap, the world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a <a href="#">template starter page</a>. Get started with Bootstrap, the
+            world’s most popular framework for building responsive, mobile-first
+            sites, with jsDelivr and a template starter page.
+        </p>
     </div>
 
 

@@ -7,7 +7,7 @@
 \* ********************************************* */
 
 // Colors
-$primary: #000a79;
+$primary: #0062ff;
 $primary-dark: #003a95;
 $black: #151515;
 $black-light: #464646;
@@ -28,7 +28,7 @@ $theme-colors: (
 );
 
 // Options
-$enable-rounded: false;
+$enable-rounded: true;
 $enable-rfs: true; //responsive fonts
 
 // Spacers
@@ -134,7 +134,7 @@ $font-sizes: (
 $headings-margin-bottom: $spacer * 0.5; // * 0.5 default
 $headings-font-family: "Inter";
 $headings-font-style: null;
-$headings-font-weight: 500;
+$headings-font-weight: 700;
 $headings-line-height: 1.2;
 $headings-color: $primary;
 // scss-docs-end headings-variables
@@ -149,11 +149,11 @@ $display-font-sizes: (
     6: 2.5rem,
 );
 
-$display-font-weight: 300;
+$display-font-weight: 700;
 $display-line-height: $headings-line-height;
 // scss-docs-end display-headings
 
-$blockquote-margin-y: $spacer;
+$blockquote-margin-y: 30px;
 $blockquote-font-size: $font-size-base * 1.25;
 
 $hr-margin-y: $spacer;
@@ -162,19 +162,39 @@ $hr-height: 1px;
 $hr-opacity: 0.25;
 
 // Breakpoint at where values start decreasing if screen width is smaller
-$rfs-base-value: 1.25rem;
-$rfs-breakpoint: 1920px;
+$rfs-base-value: 2.65rem;
+$rfs-breakpoint: 920px;
 
 // Factor of decrease
 $rfs-factor: 10;
 
-$btn-padding-y-sm: 2px;
-$btn-padding-x-sm: 7px;
-$btn-padding-y: 10px;
-$btn-padding-x: 30px;
-$btn-font-size-sm: 13px;
+// Modal
 
-$btn-border-radius: 30px;
+$modal-inner-padding: $spacer;
+$modal-footer-margin-between: 0.5rem;
+$modal-dialog-margin: 0.5rem;
+$modal-dialog-margin-y-sm-up: 1.75rem;
+$modal-title-line-height: $line-height-base;
+$modal-content-color: null;
+$modal-content-bg: #fff;
+$modal-content-border-color: rgba($black, 0.2);
+$modal-content-border-width: 1px;
+$modal-content-border-radius: 2px;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+$modal-backdrop-bg: $black;
+$modal-backdrop-opacity: 0.7;
+$modal-header-border-color: $primary;
+$modal-footer-border-color: $modal-header-border-color;
+$modal-header-border-width: $modal-content-border-width;
+$modal-footer-border-width: $modal-header-border-width;
+$modal-header-padding-y: $modal-inner-padding;
+$modal-header-padding-x: $modal-inner-padding;
+$modal-header-padding: $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+$modal-sm: 300px;
+$modal-md: 500px;
+$modal-lg: 800px;
+$modal-xl: 1140px;
 
 // 3. Include remainder of required Bootstrap stylesheets
 // Configuration
@@ -195,8 +215,8 @@ $btn-border-radius: 30px;
 @import "node_modules/bootstrap/scss/transitions";
 @import "node_modules/bootstrap/scss/dropdown";
 //@import "node_modules/bootstrap/scss/button-group";
-@import "node_modules/bootstrap/scss/nav";
-@import "node_modules/bootstrap/scss/navbar";
+//@import "node_modules/bootstrap/scss/nav";
+//@import "node_modules/bootstrap/scss/navbar";
 //@import "node_modules/bootstrap/scss/card";
 //@import "node_modules/bootstrap/scss/accordion";
 //@import "node_modules/bootstrap/scss/breadcrumb";
@@ -204,10 +224,10 @@ $btn-border-radius: 30px;
 //@import "node_modules/bootstrap/scss/badge";
 //@import "node_modules/bootstrap/scss/alert";
 //@import "node_modules/bootstrap/scss/progress";
-@import "node_modules/bootstrap/scss/list-group";
+//@import "node_modules/bootstrap/scss/list-group";
 @import "node_modules/bootstrap/scss/close";
 //@import "node_modules/bootstrap/scss/toasts";
-//@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/modal";
 //@import "node_modules/bootstrap/scss/tooltip";
 //@import "node_modules/bootstrap/scss/popover";
 //@import "node_modules/bootstrap/scss/carousel";
@@ -230,5 +250,10 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    letter-spacing: -0.02em;
+}
+
+// Usage
+.container-small {
+    max-width: 800px;
+    @include make-container();
 }
