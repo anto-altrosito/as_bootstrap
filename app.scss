@@ -7,7 +7,7 @@
 \* ********************************************* */
 
 // Colors
-$primary: #63e213;
+$primary: #000a79;
 $primary-dark: #003a95;
 $black: #151515;
 $black-light: #464646;
@@ -73,10 +73,6 @@ $grid-breakpoints: (
 // Grid containers
 
 $container-max-widths: (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px,
     xxl: 1320px,
 );
 
@@ -90,7 +86,7 @@ $grid-row-columns: 6;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width * 0.5; // *0.5 default
+$container-padding-x: 20px; //$grid-gutter-width *0.5 default
 
 // Components
 $border-radius: 0.25rem;
